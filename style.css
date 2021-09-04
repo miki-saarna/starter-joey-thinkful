@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+}
+
+header {
+    background-color: #0d1f5f;
+}
+
+header h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0; 
+    /* margin: 0 removes default margin/spacing around h1 elements */
+    padding-top: 20px;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 17px 0;
+}
+header nav ul li a {
+    color: #fff;
+    margin: 0 17px 0 0;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+    }
+    header h1 {
+        margin-left: 20px;
+        align-self: center;
+        padding: 0;
+    }
+    header nav {
+        margin-right: 20px;
+    }
+    header nav ul li a:hover {
+        color: yellow;
+    }
+
+}
